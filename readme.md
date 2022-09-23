@@ -26,4 +26,4 @@
 
 - How to change background color of buttons upon being hovered
 
-## [Live-link]() of the project
+## [Live-link](https://homepage-of-product.netlify.app/) of the project
