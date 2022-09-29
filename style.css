@@ -1,240 +1,208 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@400;900&family=Orbitron:wght@400;500;600;700;800;900&family=Oswald:wght@200;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,800;1,900&family=Red+Rose:wght@300;400;700&display=swap');
-
-* {
-    margin: 0;
+*{
+    box-sizing: border-box;
     padding: 0;
-    outline: 0;
+    margin: 0;
 }
 
-body {
-    font-family: 'Poppins';
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    width: 80vw;
+    margin: auto;
 }
 
-nav {
+/* Navbar */
+
+nav{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-top: 40px;
-    margin-left: 60px;
+    align-items: center;
+    height: 8rem;
 }
 
-.nav-items {
+nav img{
+    height: 2.5rem;
+}
+
+.nav-items{
     display: flex;
-    flex-direction: row;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 11rem;
-    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
 }
 
-.nav-item:hover {
-    color: #FE5E35;
-    cursor: pointer;
-    font-weight: bold;
+.nav-item{
+    margin: 0 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(69, 69, 69);
 }
 
-.nav-item {
-    font-weight: 100;
-    margin-right: 60px;
+.active-item{
+    color: #fe5e35;
+    font-weight: 800;
 }
 
-.active-item {
-    font-weight: bold;
-    color: #FE5E35;
-}
+/* Hero Section */
 
-.image2 {
-    height: 40px;
-}
-
-.intro-section {
+.intro-section{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* position: relative; */
 }
 
-.left-section {
-    margin-top: 50px;
-    margin-left: 60px;
+
+
+.left-section h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
-h3 {
-    font-size: 35px;
-    font-weight: 100;
+[alt="circles"]{
+    height: 2.5rem;
+    margin-left: 1rem;
 }
 
-.image3 {
-    height: 33px;
+.left-section h1{
+    font-family: 'Fredoka One',sans-serif;
+    font-size: 4rem;
+    margin: 1rem 0 2rem 0;
 }
 
-h1 {
-    font-size: 70px;
-    font-family: 'Fredoka one';
+
+.sub-headline{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    padding-left: 4rem;
 }
 
-.sub-headlines {
-    margin-top: 30px;
+.sub-headline img{
+    background-color:#fe5e35;
+    padding: .3rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    height: 1.7rem;
 }
 
-.sub-headlines img {
-    border: 1px solid #FE5E35;
-    border-radius: 50%;
-    background-color: #FE5E35;
-    padding: 5px 5px;
-    margin-left: 70px;
-    height: 15px;
-    margin-top: 10px;
+.text{
+    width: 70%;
+    color: #758283;
+    line-height: 1.8;
+    margin: 3rem 0;
 }
 
-.sub-headline {
-    font-size: 25px;
-    font-weight: 100;
-}
-
-h5 span {
-    margin-left: 10px;
-}
-
-.text {
-    color: #AFAFAF;
-    margin-top: 40px;
-    font-size: 13px;
-}
-
-.action-btns {
-    margin-top: 30px;   
-}
-
-.action-btn {
-    border-radius: 30px;
-    background: #FE5E35;
-    padding: 15px 25px;
+.action-btn{
     color: #fff;
-    font-size: 17px;
+    background-color: #fe5e35;
+    border-radius: 3rem;
+    padding: .8rem 1.6rem;
     border: none;
+    font-size: 1rem;
+    margin-right: 1.4rem;
 }
 
-.headphone {
+
+
+
+/* right section images */
+
+.headphone-div{
+    position: relative;
+    padding-left: 2rem;
+}
+
+[alt="headphone"]{
     height: 25rem;
-    top: 0;
-    right: 0%;
-    position: absolute;
-    margin-top: 7rem;
-    margin-right: 8rem;
     z-index: -1;
 }
 
-.discount {
-    right: 0%;
-    height: 7.5rem;
-    position: fixed;
-    margin-top: 16rem;
-    margin-right: 28rem;
-}
-
-.discount-content {
-    right: 0;
+.discount{
+    height: 6rem;
     position: absolute;
-    margin-top: 17.5rem;
-    margin-right: 29.4rem;
-    text-align: center;
-    color: #fff;
+    left: 0;
+    bottom:2rem;
 }
 
-.discount-content h4 {
-    font-size: 12px;
-}
-
-.discount-content h1 {
-    font-size: 37px;
-}
-
-.dots {
+.right-section{
     display: flex;
-    flex-direction: row;
-    right: 0%;
-    position: absolute;
-    margin-top: 27rem;
-    margin-right: 16rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.yellow-dot {
-    background-color: #FBD104;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.tomato-dot {
-    background-color: #FE5E35;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.black-dot {
-    background-color: #000000;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.action-btn1 {
-    border-radius: 30px;
-    background: #FE5E35;
-    padding: 15px 25px;
+.discount-content{
     color: #fff;
-    font-size: 17px;
-    border: none;
-    bottom: 0;
     position: absolute;
-    margin-bottom: 60px;
-    margin-left: 16.5rem;
+    left: 1.6rem;
+    top: 19rem;
 }
 
-@media screen and (max-width: 1150px) {
-    .headphone{
-        height: 15rem;
-    }
-    .action-btn1 {
+.discount-content h1{
+    font-family: 'Fredoka One',sans-serif;
+    font-size: 1.5rem;
+}
+
+.dots{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin-bottom: 2rem;
+
+}
+
+.dot{
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 3rem;
+}
+
+.yellow-dot{ background-color: #E8BD0D;}
+.tomato-dot {background-color: #fe5e35;}
+.black-dot {background-color: #000;}
+
+.right-section button{
+    margin-left: 2rem;
+}
+
+
+/* Rwsponsive Design for 768px */
+
+@media only screen and (max-width:768px) {
+    .nav-items {
         display: none;
     }
-    .image2 {
-        height: 20px;
+
+    nav img{
+        height: 2rem;
+    }
+
+    .intro-section {
+        flex-direction: column-reverse;
+    }
+
+    [alt="headphone"]{
+        height: 15rem;
+    }
+
+    .action-btn{
+        font-size: .8rem;
+    }
+
+    .right-section {
+        margin-bottom: 3rem;
+    }
+
+    .left-section h1{
+        font-size: 3rem;
     }
     .discount {
         display: none;
-    }
-    .discount-content {
-        display: none;
-    }
-    .dots {
-      display: none;
-    }
-    .nav-items {
-        font-size: 15px;
-    }
-    .Logo {
-        height: 30px;
-    }
-    .left-section h3 {
-        font-size: 20px;
-    }
-    .image3 {
-        height: 15px;
-    }
-    .left-section h1 {
-        font-size: 30px;
-    }
-    .sub-headline img {
-        height: 8px;
-    }
-    h5 span {
-        font-size: 15px;
-    }
-    .text {
-        font-size: 9px;
     }
 }
